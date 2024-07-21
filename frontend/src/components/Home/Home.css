@@ -1,0 +1,247 @@
+/* Additional styles for spacing between cards and client details formatting */
+.App.modal-open {
+  filter: blur(5px);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 450px; /* Widen the form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow */
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal-content form input,
+.modal-content form select {
+  width: 95%; /* Add some padding to avoid ending at the edge */
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.modal-content form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content form button:hover {
+  background-color: #0056b3;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-buttons button {
+  margin-top: 10px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow */
+  width: 48%;
+  margin-bottom: 20px; /* Add margin-bottom for spacing */
+  border: 1px solid #ddd; /* Border style */
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Add spacing between the clients and expenses cards */
+}
+
+.client-info div,
+.expense-info div {
+  margin-bottom: 10px;
+}
+
+.client-name {
+  font-weight: bold;
+}
+
+.client-info p,
+.expense-info p {
+  margin: 0;
+}
+
+.client-detail {
+  color: #888;
+}
+
+.dashboard-heading,
+.date {
+  margin-left: 20px;
+}
+
+.App {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  background: #777;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.profile-name {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  transition: filter 0.3s ease-in-out;
+}
+
+.main-content.blurred {
+  filter: blur(5px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-content {
+  margin-left: 20px;
+}
+
+.dashboard-heading {
+  font-size: 24px;
+}
+
+.date {
+  color: #888;
+}
+
+.create-job {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-job:hover {
+  background-color: #0056b3;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.stat-item {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.stat-title {
+  font-size: 16px;
+  color: #888;
+}
+
+.stat-value {
+  font-size: 20px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  width: 48%;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.client-info,
+.expense-info {
+  margin-top: 20px;
+}
+
+.client-name,
+.client-email,
+.job-name,
+.budget {
+  margin-bottom: 10px;
+}
+.client-info {
+  max-height: 300px; /* Adjust height as needed */
+  overflow-y: auto;
+}
+
+/* Styling to make the scrollbar look better (optional) */
+.client-info::-webkit-scrollbar {
+  width: 8px;
+}
+
+.client-info::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.client-info::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
